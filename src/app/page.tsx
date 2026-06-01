@@ -12,27 +12,27 @@ import { TeamSection } from '@/components/layout/sections/team'
 import { TestimonialSection } from '@/components/layout/sections/testimonial'
 
 export const metadata = {
-	title: 'TuPOS - Sistema POS para facturación electrónica en Ecuador',
+	title: 'PUI POS - Sistema POS para facturación electrónica en Ecuador',
 	description:
 		'El POS que factura al toque, te ahorra multas y te hace ganar dinero. Prueba gratis por 14 días. Facturación electrónica SRI, inventario y ventas en un solo lugar.',
 	openGraph: {
 		type: 'website',
 		url: 'https://softecsa.com',
-		title: 'TuPOS - Sistema POS para facturación electrónica en Ecuador',
+		title: 'PUI POS - Sistema POS para facturación electrónica en Ecuador',
 		description: 'El POS que factura al toque, te ahorra multas y te hace ganar dinero. Prueba gratis por 14 días.',
 		images: [
 			{
 				url: 'https://softecsa.com/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'TuPOS - Sistema POS para Ecuador',
+				alt: 'PUI POS - Sistema POS para Ecuador',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		site: 'https://softecsa.com',
-		title: 'TuPOS - Sistema POS para facturación electrónica en Ecuador',
+		title: 'PUI POS - Sistema POS para facturación electrónica en Ecuador',
 		description: 'El POS que factura al toque, te ahorra multas y te hace ganar dinero. Prueba gratis por 14 días.',
 		images: ['https://softecsa.com/og-image.jpg'],
 	},
