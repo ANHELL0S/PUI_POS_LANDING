@@ -20,7 +20,7 @@ interface PlanProps {
 
 const plan: PlanProps = {
 	title: 'Profesional',
-	priceMonthly: 20,
+	priceMonthly: 30,
 	priceYearly: 300,
 	description: 'Todo lo que necesitas para gestionar tu negocio en Ecuador',
 	buttonText: 'Quiero el plan mensual',
