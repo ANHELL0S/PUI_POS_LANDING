@@ -17,6 +17,16 @@ export const HeroSection = () => {
 
 	const rotatingTexts = ['factura al toque', 'te ahorra multas', 'te da paz', 'te quita estrés', 'te hace ganar dinero']
 
+	const handleWhatsAppClick = (type: 'free_trial' | 'demo') => {
+		const message =
+			type === 'free_trial'
+				? 'Hola, me interesa probar el POS gratis por 14 días. ¿Podrían darme más información?'
+				: 'Hola, me gustaría ver una demostración del POS. ¿Cuándo podrían agendarla?'
+
+		const whatsappUrl = `https://api.whatsapp.com/send/?phone=%2B5930989026071&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`
+		window.open(whatsappUrl, '_blank')
+	}
+
 	return (
 		<section className='container w-full relative overflow-hidden min-h-[80vh]'>
 			<div style={{ width: '100%', height: '100%', position: 'absolute' }}>
@@ -61,15 +71,17 @@ export const HeroSection = () => {
 
 					<div className='flex flex-col items-center gap-3'>
 						<div className='space-y-4 md:space-y-0 md:space-x-4'>
-							<Button size='lg' className='font-bold group/arrow'>
+							<Button size='lg' className='font-bold group/arrow' onClick={() => handleWhatsAppClick('free_trial')}>
 								Probar gratis 14 días
 								<ArrowRight className='size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform' />
 							</Button>
 
-							<Button asChild size='lg' variant='outline' className='font-bold bg-background/50 backdrop-blur-sm'>
-								<Link href='https://github.com/nobruf/shadcn-landing-page.git' target='_blank'>
-									Ver demo
-								</Link>
+							<Button
+								size='lg'
+								variant='outline'
+								className='font-bold bg-background/50 backdrop-blur-sm'
+								onClick={() => handleWhatsAppClick('demo')}>
+								Ver demo
 							</Button>
 						</div>
 
